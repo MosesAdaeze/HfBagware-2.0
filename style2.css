@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Norican&family=Saira+Condensed:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Saira+Condensed:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Norican&family=Saira+Condensed:wght@300;400&family=Trocchi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Norican&family=Oswald&family=Saira+Condensed:wght@300;400&family=Trocchi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Norican&family=Oswald&family=Saira+Condensed:wght@300;400&family=Trocchi&family=Yuji+Hentaigana+Akebono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Luxurious+Roman&family=Norican&family=Oswald&family=Saira+Condensed:wght@300;400&family=Trocchi&family=Yuji+Hentaigana+Akebono&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400');
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Luxurious+Roman&family=Norican&family=Oswald&family=Saira+Condensed:wght@300;400&family=Trocchi&family=Yuji+Hentaigana+Akebono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Imperial+Script&family=Luxurious+Roman&family=Norican&family=Oswald&family=Saira+Condensed:wght@300;400&family=Trocchi&display=swap');
+
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import "custom";
+@import "~bootstrap/scss/bootstrap";
+
+/* *{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.block {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    background-position: center;
+    /* padding-top: 20px; */
+    /* margin-top: 20px;
+    padding-bottom: 0%; */
+    /* padding: 10px 0 5px; */
+    /* box-sizing: border-box;
+    background-color: burlywood; */
+    /* margin-left: 20%;
+    margin-right: 20%;*/
+/* } */ 
+/* .footer{
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    /* padding-top: 20px; */
+    /* margin-top: 45px;
+    padding: 70px 0 30px;
+    box-sizing: border-box;
+    background-color: #18181a;
+}  */ 
+
+
+/* CONTACT US SECTION*/
+*{
+    margin: auto;
+    /* padding: 0;
+    list-style: none;
+    text-decoration: none; */
+}
+
+.top--footer{
+    width: 100%;
+    display: block;
+    height: 100%;
+    /* overflow: hidden; */
+    /* padding-top: 20px; */
+    /* margin-top: 20px; */
+    /* padding: 5px; */
+    box-sizing: border-box;
+    background-color: black;
+}
+
+.footer-context h4{
+    padding-left: 3%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    /* float: right; */
+    color: white;
+    font-family: 'Saira Condensed', sans-serif;
+}
+
+
+.nav--menu {
+    text-align: center;
+    list-style: none;
+    /* margin-top: 6px ; */
+    padding-top: 11px;
+}
+
+.nav--menu li{
+    display: inline-block;
+
+    position: relative;
+}
+
+.nav--menu li a{
+    color: black;
+    text-decoration: none;
+    padding: 0 25px;
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 120%;
+}
+
+.homebtn a {
+    top:0;
+}
+    /* border: 1px solid rgb(155, 133, 133);
+    background-color: rgb(223, 75, 75); */
+
+
+.nav--menu li a:hover {
+    color: rgb(223, 75, 75);
+}
+    /* border: 1px solid rgb(155, 133, 133);;
+    background-color: rgb(223, 75, 75); */
+
+.nav--menu li a::before {
+    content: "";
+    display: block;
+    height: 5px;
+    background-color: rgb(223, 75, 75);
+    /* background-color: rgb(223, 75, 75); */
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+}
+
+.nav--menu li a:hover::before {
+    width: 100%;
+}
+
+.nav--menu::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+ @media screen and (max-width: 500px) {
+    .nav--menu {
+      width: 100%;
+    }
+}
+@media(max-width: 600px){
+    .nav--menu .nav--menu li{
+        width: 90%;
+    }
+    .nav--menu li .nav--menu li,
+    .nav--menu li .homebtn a{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+/* *{
+    background-color: rgb(187, 179, 179);
+} */
+
+/* START CONTACT CSS */
+
+.contact_wrapper {
+    background-color: rgba(245, 235, 235, 0.564);
+}
+
+.contact-text h1 {
+    color: black;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 90px;
+    text-align: center;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.team{
+    display: flex;
+    /* text-align: center; */
+    width: auto;
+    /* padding-left: 20px; */
+    justify-content: center;
+    flex: 1;
+    width: 100%;
+}
+.team .team_member{
+    text-align: center;
+    background: #fff;
+    width: 600px;
+    margin: 15px;
+    margin-top: 0%;
+    /* margin-bottom: 150px; */
+    padding: 20px; 
+    /* line-height: 50px; */ 
+    /* color: 8e8b8b; */
+}
+
+.inner_member {
+    font-family: 'Saira Condensed', sans-serif;
+    text-transform: uppercase;
+    color: black;
+}
+
+.sec-wrapper {
+    margin-top: 0%;
+}
+
+.teamm{
+    display: flex;
+    /* text-align: center; */
+    width: auto;
+    /* padding-left: 20px; */
+    justify-content: center;
+    flex: 1;
+    width: 100%;
+}
+.teamm .teamm_member{
+    background:#fff;
+    width: 600px;
+    margin: 30px;
+    /* margin-bottom: 150px; */
+    padding: 60px; 
+    /* line-height: 50px; */
+    /* color: 8e8b8b; */
+}
+
+.teamm_member h3 {
+    font-family: 'Saira Condensed', sans-serif;
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+    padding-bottom: 10%;
+    size: 80%;
+}
+
+.innerr_member {
+    font-family: 'Saira Condensed', sans-serif;
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+}
+
+button{
+    width: 150px;
+    padding: 15px 0;
+    text-align: center;
+    margin: -18px 10px;
+    border-radius: 35px;
+    font-weight: bold;
+    border: 2px solid    rgb(109, 208, 109);
+    background: transparent;
+    color: black;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.san{
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.05s;
+}
+button:hover san{
+    width: 100%;
+    /* rgb(109, 208, 109)
+    rgb(60, 154, 55) */
+}
+button:hover{
+    background: transparent;
+    border: 2px solid rgb(60, 154, 55); 
+}
+
+
+
+.team .sec{
+    width:600px;
+    margin: 50px;
+    flex: auto;
+}
+
+.footerr {
+    text-align: center;
+    width: 100%;
+    background-color: #18181a;
+}
+
+.footerr h1 {
+    padding-top: 3%;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    padding-bottom: 2%;
+}
+
+.footerr p {
+    text-align: center;
+    padding-left: 3%;
+    color: white;
+    font-family: 'Saira Condensed', sans-serif;
+}
+
+.footerr_ a {
+    text-align: center;
+    font-family: arial;
+    font_size: 15px;
+    color: white;
+    display: inline-block;
+    width: 100%;
+}
+
+.footerr_ li {
+    padding: 1%;
+    padding-top: 3%;
+    display: inline-block;
+}
+
+/* END CONTACT CSS */
+
+
+/* START LUST BAG*/
+
+.hff {
+    text-align: center;
+    margin-bottom: 5%;
+}
+.hff h1{
+    text-align: center;
+    padding-bottom: 1%;
+    text-decoration-thickness: 0.5em;
+    /* font-family: 'Luxurious Roman', cursive; */
+    font-size: 30%;
+    font-size: 60px;
+    color: lightblack;
+    color: black;
+    text-align: center;
+}
+
+.hff h4 {
+    float: left;
+    display: inline-block;
+    margin-right: 8px;
+    padding: 0 5px;
+}
+
+.hff svg {
+    margin-top: 3%;
+    float: right;
+    display: inline-block;
+    margin-right: 10px;
+    padding: 0 5px;
+}
+
+.svg-icons {
+    color: black;
+}
+
+
+.padding {
+    width: 100%;
+    display: block;
+    height: 100%;
+    /* overflow: hidden; */
+    /* padding-top: 20px; */
+    /* margin-top: 20px; */
+    /* padding: 5px; */
+    box-sizing: border-box;
+    background-color: rgba(245, 235, 235, 0.564);
+}
+
+.padding ion-icon:hover{
+    color: black;
+}
+
+.padding h4{
+    padding-left: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    /* float: right; */
+    color: white;
+    font-family: 'Saira Condensed', sans-serif;
+}
+
+.lust-bag h1 {
+    float:right;
+    text-align: center;
+    padding-right: 10px;
+}
+
+
+
+
+/*begin navigaton menu*/
+.navv-menu {
+    text-align: center;
+    list-style: none;
+    margin-top: 4px ;
+}
+
+.navv-menu li{
+    display: inline-block;
+
+    position: relative;
+}
+
+.navv-menu li a{
+    color: black;
+    text-decoration: none;
+    padding: 0 25px;
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 120%;
+}
+
+.homebtnn a {
+    top:0;
+}
+    /* border: 1px solid rgb(155, 133, 133);
+    background-color: rgb(223, 75, 75); */
+
+
+.navv-menu li a:hover {
+    color: rgb(223, 75, 75);
+}
+    /* border: 1px solid rgb(155, 133, 133);;
+    background-color: rgb(223, 75, 75); */
+
+.navv-menu li a::before {
+    content: "";
+    display: block;
+    height: 5px;
+    background-color: rgb(223, 75, 75);
+    /* background-color: rgb(223, 75, 75); */
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+}
+
+.navv-menu li a:hover::before {
+    width: 100%;
+}
+
+.navv-menu::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+ @media screen and (max-width: 500px) {
+    .nav-menu {
+      width: 100%;
+    }
+}
+@media(max-width: 600px){
+    .nav-menu .nav-menu li{
+        width: 90%;
+    }
+    .nav-menu li .nav-menu li,
+    .nav-menu li .homebtn a{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
