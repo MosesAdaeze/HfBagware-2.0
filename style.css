@@ -139,17 +139,21 @@ button {
     overflow: hidden;
     position: relative;
     background-image: url(images/home\ \(2\).jpg);
-    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     animation: change 25s infinite ease-in-out;
 }
 
 @keyframes change {
-    10% {
+    0% {
         background-image: url(images/home\ \(2\).jpg);
-    }40% {
-        background-image: url(images/homeimg\ \(2\).jpg);
+    }
+    20% {
+        background-image: url(images/pexel1.jpg);
+    }
+    40% {
+        background-image: url(images/pexel2.jpg);
     }
     80% {
         background-image: url(images/moreimg\ \(1\).jpg);
