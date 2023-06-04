@@ -138,30 +138,25 @@ button {
     height: 100vh;
     overflow: hidden;
     position: relative;
-    background-image: url(images/about.jpg);
+    background-image: url(images/home\ \(2\).jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    animation: change 10s infinite ease-in-out;
+    animation: change 25s infinite ease-in-out;
 }
 
 @keyframes change {
-    0% {
-        background-image: url(images/about.jpg);
-    }20% {
-        background-image: url(images/ruins.jpg);
+    10% {
+        background-image: url(images/home\ \(2\).jpg);
+    }40% {
+        background-image: url(images/homeimg\ \(2\).jpg);
     }
-    40% {
-        background-image: url(images/fan.jpg);
+    80% {
+        background-image: url(images/moreimg\ \(1\).jpg);
     }
-    60% {
-        background-image: url(images/home-img.jpg);
-    }80% {
-        background-image: url(images/mountains.jpg);
-    }100% {
-        background-image: url(images/imgg\ \(2\).jpg);
+    100% {
+        background-image: url(images/moreimg\ \(2\).jpg);
     }
-
 }
 
 @media (max-width: 1429px){
