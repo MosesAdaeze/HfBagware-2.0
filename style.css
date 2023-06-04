@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Norican&family=Oswald&family=Saira+Condensed:wght@300;400&family=Trocchi&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Norican&family=Oswald&family=Saira+Condensed:wght@300;400&family=Trocchi&family=Yuji+Hentaigana+Akebono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Luxurious+Roman&family=Norican&family=Oswald&family=Saira+Condensed:wght@300;400&family=Trocchi&family=Yuji+Hentaigana+Akebono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Bebas+Neue&family=Black+Han+Sans&family=Bungee&family=Cinzel:wght@400;600&family=Gloock&family=Great+Vibes&family=Imperial+Script&family=Kanit:wght@300&family=League+Spartan&family=Luxurious+Roman&family=Norican&family=Oswald&family=Poppins:wght@400;500;600&family=Prosto+One&family=Raleway:wght@400;500;600&family=Saira+Condensed:wght@300;400&family=Ubuntu:wght@400;500&display=swap');
 *{
     margin: 0;
     box-sizing: border-box;
@@ -12,6 +13,14 @@
 
 body {
     min-height: 100%;
+}
+
+button {
+    border: none;
+    background-color: #fff;
+    font-size: 1.5rem;
+    padding: 0 4px;
+    cursor: pointer;
 }
 
 /* START TOP FOOTER */
@@ -24,7 +33,6 @@ body {
 .footer-context h4{
     text-align: center;
     padding: 4px;
-    /* padding: 1px 5rem 0 4rem; */
     color: white;
     font-size: 1rem;
     font-family: 'Saira Condensed', sans-serif;
@@ -34,15 +42,19 @@ body {
 
 
 /* ------------------------ HEADER AND NAVBAR ----------------*/
-.header_content {
-    text-align: center;
-    padding: 0.5rem 0 1rem 0;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+.header {
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     z-index: 999;
     position: sticky;
     top: 0;
     left: 0;
-    /* border-bottom: 1px solid black; */
+}
+
+.header_content {
+    text-align: center;
+    padding: 0.5rem 0 1rem 0;
+    /* border-bottom: 0.1rem solid black; */
 }
 
 .hf {
@@ -55,8 +67,10 @@ body {
 }
 
 .hf h4 {
-    font-size: 1rem;
+    font-size: 0.8rem;
     text-transform: capitalize;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
 }
 
 .nav-menu li{
@@ -67,24 +81,25 @@ body {
 .nav-menu li a{
     text-decoration: none;
     color: black;
-    font-family: 'Saira Condensed', sans-serif;
-    font-size: 1.2rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
     position: relative;
 }
 
 .nav-menu li a.active {
-    color: rgb(223, 75, 75);
+    color: #cac9c9;
 } 
 
-.nav-menu li a:hover {
-    color: rgb(223, 75, 75);
-}
+/* .nav-menu li a:hover {
+    color: black;
+} */
 
 .nav-menu li a::before{
     content: " ";
     display: block;
-    height: 4px;
-    background-color: rgb(223, 75, 75);
+    height: 2px;
+    background-color: black;
     position: absolute;
     bottom: -4px;
     width: 0%;
@@ -106,21 +121,28 @@ body {
 
 /*START NEW ARRIVAL SECTION*/
 
-.homepage img{
-    width: 100%; 
-    max-height: 50rem;
-    padding-top: 5px;
+.hero_content {
+    display: flex;
+    align-items: center;
+}
+
+.hero_content img{
+    width: 68%; 
+    height: 100%;
 }
 
 .text {
-    padding: 2rem 0 0 0;
+    padding: 0 10rem 0 ;
+    font-variant: small-caps;
     text-align: center;
     font-size: 1.3rem;
 }
 
 .text span p{
-    font-family: 'Saira Condensed', sans-serif;
+    padding: 1rem 0;
+    font-family: 'Orbitron', sans-serif;
     font-size: 1.2rem;
+    font-weight: 100;
 }
 
 .button {
@@ -140,11 +162,11 @@ body {
     background-color: white; 
     color: black; 
     margin-top: 0.7rem;
-    border: 2px solid rgb(223, 75, 75);
+    border: 2px solid black;
 }
   
 .button1:hover {
-    background-color: rgb(223, 75, 75);
+    background-color: black;
     color: white;
 }
 /*   ------------------- END NEW ARRIVAL SECTION ------------------------*/
