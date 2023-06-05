@@ -11,9 +11,9 @@
     box-sizing: border-box;
 }
 
-body {
-    min-height: 100%;
-}
+html, body {
+    height: 100%;
+  }
 
 button {
     border: none;
@@ -37,7 +37,24 @@ button {
     font-size: 1rem;
     font-family: 'Saira Condensed', sans-serif;
     text-transform: capitalize;
+    animation: animate 10s infinite ease-in-out;
 }
+
+@keyframes animate {
+    0% {
+        color: rgb(255, 201, 217);
+    }
+
+    50% {
+        color: rgb(199, 247, 199);
+    }
+
+    100% {
+        color: rgb(252, 175, 175)
+    }
+}
+
+
 /* END TOP FOOTER */
 
 
@@ -142,7 +159,7 @@ button {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    animation: change 25s infinite ease-in-out;
+    animation: change 35s infinite ease-in-out;
 }
 
 @keyframes change {
@@ -213,58 +230,59 @@ button {
 
 .vault_header {
     text-align: center;
-    font-size: 1.6rem;
-    padding: 7rem 0 5rem 0;
+    font-size: 1.2rem;
+    font-variant: small-caps;
+    padding: 4rem 0 3rem 0;
 }
 
-.column {
-    float: left;
-    width: 33.33%;
-    padding: 5px;
-    padding-left: 3%;
-    padding-right: 2%;
+.vault_columns {
+    display: flex;
+    gap: 2rem;
+}
+
+.vault_columns {
     text-align: center;
-    padding-bottom: 5rem;
+}
+
+.column h4 a{
+    color: black;
+    font-size: 1.5rem;
+    text-transform: capitalize;
 }
 
 .column img{
     border-radius: 1%;
+    padding: 0 0 0.6rem 0;
 }
 
-.column_text {
-    padding-top: 5rem;
-    font-size: 1.4rem;
-    font-weight: 500;
+.column h4 {
+    margin-bottom: 1rem;
 }
 
-.column a{
-    text-align: center;
-    text-transform: capitalize;
+.column span a {
+    text-decoration: underline;
     color: black;
-    cursor: pointer;
+    font-size: 1rem;
 }
 
-.vault_columns::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
- @media screen and (max-width: 500px) {
+@media screen and (max-width: 500px) {
     .column {
       width: 100%;
     }
 } 
+
 /* ----------------- END VALUT SECTION -----------*/
 
-/* ------------ START TOP PICKS --------------------*/
-.top-picks_header h1{
-    text-align: center;
-    padding-top: 5%;
-}
 
-*{
-    box-sizing: border-box;
+
+/* ------------ START TOP PICKS --------------------*/
+
+.top-pick_title {
+    text-align: center;
+    font-size: 1.2rem;
+    font-variant: small-caps;
+    padding: 4rem 0 3rem 0;
+    text-transform: uppercase;
 }
 
 .clm{
