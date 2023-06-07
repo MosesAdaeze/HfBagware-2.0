@@ -8,12 +8,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Bebas+Neue&family=Black+Han+Sans&family=Bungee&family=Cinzel:wght@400;600&family=Gloock&family=Great+Vibes&family=Imperial+Script&family=Kanit:wght@300&family=League+Spartan&family=Luxurious+Roman&family=Norican&family=Oswald&family=Poppins:wght@400;500;600&family=Prosto+One&family=Raleway:wght@400;500;600&family=Saira+Condensed:wght@300;400&family=Ubuntu:wght@400;500&display=swap');
 *{
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
-
-html, body {
-    height: 100%;
-  }
 
 button {
     border: none;
@@ -23,7 +22,7 @@ button {
     cursor: pointer;
 }
 
-/* START TOP FOOTER */
+/*----------------- START TOP FOOTER -------------*/
 .top-footer{
     width: 100%;
     height: 2rem;
@@ -55,8 +54,7 @@ button {
 }
 
 
-/* END TOP FOOTER */
-
+/* --------------------- END TOP FOOTER ---------------------- */
 
 /* ------------------------ HEADER AND NAVBAR ----------------*/
 .header {
@@ -71,24 +69,13 @@ button {
 .header_content {
     text-align: center;
     padding: 0.5rem 0 1rem 0;
-    /* border-bottom: 0.1rem solid black; */
 }
 
 .hf {
-    /* position: relative; */
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    /* padding: 0 3rem 0 10rem; */
-    /* display: flex; */
-    /* justify-content: space-between; */
-    /* align-items: self-start; */
-    /* justify-content: space-between; */
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content: flex-start; */
-    /* justify-content: space-between; */
-    /* padding: 0 3rem 0 3rem; */
+    padding: 0 3rem 0 3rem;
     font-size: 2rem;
     padding-bottom: 0.5rem;
 }
@@ -109,7 +96,7 @@ button {
     text-decoration: none;
     color: black;
     font-family: 'Ubuntu', sans-serif;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 400;
     position: relative;
 }
@@ -117,10 +104,6 @@ button {
 .nav-menu li a.active {
     color: #cac9c9;
 } 
-
-/* .nav-menu li a:hover {
-    color: black;
-} */
 
 .nav-menu li a::before{
     content: " ";
@@ -146,19 +129,12 @@ button {
  /* ---------------- END HEADER/NAVBAR SECTION ---------------  */
 
 
-/*START NEW ARRIVAL SECTION*/
+/* ----------------- START NEW ARRIVAL SECTION -------------------*/
 
 .hero_content {
     display: flex;
     align-items: center
 }
-
-/* .hero_content img{
-    width: 68%; 
-    height: 100vh;
-    animation: change 10s infinite ease-in-out;
-} */
-
 
 .home-img {
     width: 68%;
@@ -281,146 +257,41 @@ button {
       width: 100%;
     }
 } 
-
 /* ----------------- END VALUT SECTION -----------*/
-
-/* .img-box img {
-    max-width: 100%;
-}
-
-.slider_container .bs-container {
-    padding: 0 15px;
-    max-width: 1230px;
-    margin: 0 auto;
-} */
-
-
-
-
-
-
-
-.container_title {
-    text-align: center;
-    font-size: 1.2rem;
-    font-variant: small-caps;
-    padding: 4rem 0 3rem 0;
-}
-
-.column-img {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.column-img img {
-    width: 50%;
-    min-height: 50px;
-}
-/* .row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-} */
-  
-  /* Create four equal columns that sits next to each other */
-/* .column {
-    flex: 25%;
-    max-width: 55%;
-    padding: 0 2px;
-}
-  
-.column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
-} */
 
 /* ------------ START TOP PICKS --------------------*/
 
-.top-pick_title {
-    text-align: center;
-    font-size: 1.2rem;
-    font-variant: small-caps;
-    padding: 4rem 0 3rem 0;
-    text-transform: uppercase;
-}
+/* --------------------- END TOP PICKS ---------------------- */
 
-.clm{
-    float: left;
-    width: 25%;
-    padding: 1%;
-    padding-top: 3.5%;
-    text-align: center;
-}
 
-.clm img {
-    border-radius: 1%;
-}
 
-.clm h2{
-    padding-top: 6%;
-    padding-bottom: 4.5%;
-} 
-
-.clm a {
-    font-family: 'Saira Condensed', sans-serif;
-}
-
-.clm a:link {
-    color: green;
-    background-color: transparent;
-    text-decoration: none;
-}
-.clm a:visited {
-    color: black;
-    background-color: transparent;
-    text-decoration: none;
-}
-.clm a:hover {
-    color: rgb(77, 29, 29);
-    background-color: transparent;
-    text-decoration: underline;
-}
-
-.clm u{
-    text-decoration-line: underline;
-    font-family: 'Saira Condensed', sans-serif;
-}
-
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-@media screen and (max-width: 500px) {
-    .clm {
-      width: 100%;
-    }
-} 
-/* END TOP PICKS */
-
-/*START ABOUT US SECTION*/
+/* --------------------- START ABOUT US SECTION ---------------------*/
 
 .about_title {
     text-align: center;
     font-size: 1.2rem;
     font-variant: small-caps;
-    padding: 8rem 0 2rem 0;
+    padding: 4rem 0 3rem 0;
     text-transform: uppercase;
 }
 
 .about_content {
     display: flex;
-    padding: 2rem 3rem;
+    /* padding: 2rem 3rem; */
 }
 
 .about_left_text {
     width: 50%;
     height: 60rem;
-    display: flex;
     background-color: black;
     color: white;
+}
+
+.about_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15rem 0 0 0;
 }
 
 .about_text h4 {
@@ -437,31 +308,18 @@ button {
     font-size: 1.8rem;
 }
 
-.about_text .abt_button {
-    display: flex;
-    border: none;
-    color: black;
-    padding: 10px 28px;
-    text-transform: uppercase;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    transition-duration: 0.4s;
-    cursor: pointer;
+.button2 {
+    font-size: 110%;
+    background-color: white; 
+    color: black; 
+    margin-top: 0.7rem;
+    border: 2px solid black;
 }
   
-.abt_button:hover {
+.button2:hover {
     background-color: #cac9c9;
     color: black;
 }
-
-/* .button button {
-    border: none;
-    background-color: #fff;
-    font-size: 1.5rem;
-    padding: 0 4px;
-    cursor: pointer;
-} */
 
 .about_right_image {
     width: 60%;
@@ -471,275 +329,13 @@ button {
     background-size: cover;
     background-repeat: no-repeat;
 }
+/* ------------------END ABOUT US SECTION ------------------ */
 
 
 
+/* ----------------- START BGDOWN SECTION -----------------*/
 
-
-
-
-
-
-
-.table {
-    /* position: absolute; */
-    left: 50%;
-    /* transform: translateX(5px); */
-    transform: translate(10%, -150%);
-    padding-top: 4%;
-    padding-right: 20px;
-    font-family: 'Luxurious Roman', cursive;
-}
-
-.table {
-    background-color: rgb(107, 18, 18);
-    width: 25rem;
-    height: 30rem;
-}
-
-.text h3{
-    position: absolute;
-    top: 50%;
-    text-align: left;
-    color: black;
-    font-family: 'Luxurious Roman', cursive;
-}
-
-/* START HOT SEASON */
-.hot{
-    padding-top: 35px;
-    padding-left: 30px;
-    padding-bottom: 40px;
-} 
-
-*{
-    margin: auto;
-    padding: 0;
-}
-
-.container { 
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    height: 800px; 
-    width: 100%; 
-    /* display: column; */
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.cont { 
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    height: 800px; 
-    width: 100%; 
-    /* display: column; */
-    padding-left: 10px;
-    padding-right: 10px;
-    /* width: calc(200% - (10px * 2)); */
-    /* margin: 10px; */
-}
- 
-.con-context {
-    position: relative;
-    text-align: center;
-    color: white;
-}
-
-.note {
-    position: absolute;
-    bottom: 8px;
-    left: 16px;
-    font-size: 25px;
-}
-
-/* @media screen and (max-width: 500px) {
-    .con-context {
-      width: 100%;
-    }
-}  */
-
-.con-context2 {
-    position: relative;
-    text-align: center;
-    color: white;
-}
-
-.notes {
-    position: absolute;
-    bottom: 8px;
-    left: 16px;
-    font-size: 25px;
-}
-
-.con-context::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-/* @media screen and (max-width: 500px) {
-    .con-context2 {
-      width: 100%;
-    }
-}  */
-/* END HOT SEASON */
-
-/* START BGDOWN SECTION */
-
-.containerpad {
-    padding: 35rem 0 2rem 0;
-}
-
-.banner-sm {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(Images/bg.jpg);
-    width: 100%;
-    height: 42vh;
-    box-shadow: 20px 20px 30px rgb(0, 0, 0, 0.3);
-    border-radius: 5px;
-    background-position: center;
-    background-size: cover;
-}
-
-.bg-text {
-    position: absolute;
-    font-family: 'Cinzel', serif;
-    font-weight: 700;
-    color: purple;
-    font-size: 2.5rem;
-}
-
-.bg-text a {
-    color: black;
-}
-
-/* .bg-down img{
-    padding-left: 5%;
-    padding-right: 3%;
-} */
-/* .bg-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding-top: 4%;
-    padding-left: 750px;
-    font-size: 50px;
-    font-family: 'Luxurious Roman', cursive;
-} */
-.bg-text p{
-    padding-top: 6%;
-    font-size: 15px;
-}
-.bg-down p img{
-    color: white;
-}
-
-/* .bg-text a:link {
-    color: green;
-    background-color: transparent;
-    text-decoration: none;
-} */
-/* .bg-text a:visited {
-    color: white ;
-    background-color: transparent;
-    text-decoration: none;
-    transition: color 0.2s;
-}
-.bg-text a:hover {
-    color: rgb(77, 29, 29);
-    background-color: transparent;
-    text-decoration: bold;
-} */
-
-/* .bg-text a p ion-icon caret-forward-outline{
-    size: 80px;
-    width: 30%;
-    height: 25%;
-} */
-/* 
-@media screen and (max-width: 600px) {
-    .bg-down {
-        width: 50%;
-    }
-    .bg-text {
-        text-align: center;
-    }
-} */
-/* END BGDOWN SECTION */
-
-/* START NEXT NAVIGATION BAR{BAGS} */
-.all h1{
-    padding-top: 5%;
-    padding-bottom: 2.5%;
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-.all2 {
-    text-align: center;
-    font-family: 'Saira Condensed', sans-serif;
-}
-/* END NEXT NAVIGATION BAR{BAGS} */
-
-/*bags*/
-* {
-    box-sizing: border-box;
-}
-
-.ROW {
-    margin-bottom: 50%;
-}
-
-.COLUMN {
-    float: left;
-    width: 25%;
-    padding: 5px;
-    padding-left: 3%;
-    padding-right: 2%;
-    text-align: center;
-    margin-bottom: 3%;
-}
-
-.COLUMN img{
-    border-radius: 1%;
-}
-
-.COLUMNh3{
-    text-align: center;
-    padding-top: 4%;
-}
-
-.COLUMN p{
-    font-family: 'Courier New', Courier, monospace;
-}
-
-.COLUMN a {
-    font-family: 'Saira Condensed', sans-serif;
-    color: black;
-}
-
-.COLUMN a:hover {
-    text-decoration: underline;
-}
-/* .column p{
-    text-align: center;
-} */
-  
-/* Clearfix (clear floats) */
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-/*bags*/
-
-
-/*FOOTER*/
+/* --------------------- FOOTER ----------------------*/
 
 .footer{
     width: 100%;
@@ -863,28 +459,4 @@ a:hover {
         margin-bottom: 30px;
     }
 }
-/* END OF FOOTER */
-
-
-
-.team .team_member{
-    background: #fff;
-    width: 250px;
-    margin: 5px;
-    margin-bottom: 50px;
-    padding: 20px;
-    line-height: 20px;
-    color: 8e8b8b;
-    position:relative;
-}
-
-.section1{
-    width: 250px;
-    position: relative;
-    display: flex;
-/* padding-left: 20px; */
-    justify-content: center;
-    flex: 1;
-        
-
-}
+/* -------------------- END OF FOOTER -------------------------*/
