@@ -75,10 +75,20 @@ button {
 }
 
 .hf {
+    /* position: relative; */
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 3rem 0 3rem;
+    /* padding: 0 3rem 0 10rem; */
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* align-items: self-start; */
+    /* justify-content: space-between; */
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: flex-start; */
+    /* justify-content: space-between; */
+    /* padding: 0 3rem 0 3rem; */
     font-size: 2rem;
     padding-bottom: 0.5rem;
 }
@@ -248,6 +258,7 @@ button {
     color: black;
     font-size: 1.5rem;
     text-transform: capitalize;
+    text-decoration: none;
 }
 
 .column img{
@@ -273,7 +284,56 @@ button {
 
 /* ----------------- END VALUT SECTION -----------*/
 
+/* .img-box img {
+    max-width: 100%;
+}
 
+.slider_container .bs-container {
+    padding: 0 15px;
+    max-width: 1230px;
+    margin: 0 auto;
+} */
+
+
+
+
+
+
+
+.container_title {
+    text-align: center;
+    font-size: 1.2rem;
+    font-variant: small-caps;
+    padding: 4rem 0 3rem 0;
+}
+
+.column-img {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column-img img {
+    width: 50%;
+    min-height: 50px;
+}
+/* .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+} */
+  
+  /* Create four equal columns that sits next to each other */
+/* .column {
+    flex: 25%;
+    max-width: 55%;
+    padding: 0 2px;
+}
+  
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+} */
 
 /* ------------ START TOP PICKS --------------------*/
 
