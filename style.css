@@ -87,6 +87,32 @@ button {
     font-weight: 400;
 }
 
+/* Style the search bar container */
+form {
+    border: none;
+}
+
+/* Style the search input */
+input[type="text"] {
+    width: 250px;
+    padding: 10px;
+    height: 33px;
+    border: 1px solid black;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+  
+  /* Style the search button */
+form button[type="submit"] {
+    margin: -50px;
+    width: 32px;
+    font-size: 1.4rem;
+    border-bottom-right-radius: 10px;
+    background: var black;
+    color: black;
+    cursor: pointer;
+}
+
 .nav-menu li{
     display: inline-block;
     padding: 0 20px;
@@ -285,13 +311,14 @@ button {
     height: 60rem;
     background-color: black;
     color: white;
+    display: flex;
+    align-items: center;
 }
 
 .about_text {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 15rem 0 0 0;
 }
 
 .about_text h4 {
