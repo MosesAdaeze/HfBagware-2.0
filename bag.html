@@ -9,49 +9,79 @@
     <link rel="stylesheet" href="style2.css">
 </head>
 <body>
-    <div class="top-footer">
-        <div class="footer-context">
-            <h4> OUR PHONE NUMBER : 07061034859</h4>
-         </div>
-    </div>
-    <div class="hf">
-        <h1>ℌ𝔉𝔟𝔞𝔤𝔴𝔞𝔯𝔢
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="25" fill="currentColor" class="bi bi-handbag" viewBox="0 0 16 16">
-                <path d="M8 1a2 2 0 0 1 2 2v2H6V3a2 2 0 0 1 2-2zm3 4V3a3 3 0 1 0-6 0v2H3.36a1.5 1.5 0 0 0-1.483 1.277L.85 13.13A2.5 2.5 0 0 0 3.322 16h9.355a2.5 2.5 0 0 0 2.473-2.87l-1.028-6.853A1.5 1.5 0 0 0 12.64 5H11zm-1 1v1.5a.5.5 0 0 0 1 0V6h1.639a.5.5 0 0 1 .494.426l1.028 6.851A1.5 1.5 0 0 1 12.678 15H3.322a1.5 1.5 0 0 1-1.483-1.723l1.028-6.851A.5.5 0 0 1 3.36 6H5v1.5a.5.5 0 1 0 1 0V6h4z"/>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="25" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
-                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="25" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-            </svg>
-        </h1>
-        <ul class="nav-menu">
-            <li class="homebtn"> <a href="index.html">NEW ARRIVALS </a></li>
-            <li><a href="bag.html">BAGS</a></li>
-            <li><a href="accessories.html">ACCESSORIES</a></li>
-            <li><a href="">WORLD OF HFBAGWARE</a></li>
-            <li><a href="collection.html">COLLECTIONS</a></li>
-            <li><a href="contact.html">CONTACT US</a></li>
-        </ul>
-    </div>
-    <HR>
-        <div class="all">
-            <h1>ALL HANDBAGS</h1>
-            <div class="all2">
-                <p>Discover our full Collection of <l style="text-decoration: underline;">Totes, Crossbody bags, Shoulder bags </l> and <s style="text-decoration: underline;"> Mini bags</s>. 
-                All hfbagware styles are beautifully handcrafted in<br> nigeria by the finest artisans, and can take up to 20 hours or more to make. 
-                Architectural simplicity and elegant lines are complemented by the iconic<br> hfbagware bar closure,
-                 which makes every bag distinctive and instantly recognisable.</p>
+   
+    <section class="header">
+        <div class="header_content">
+            <div class="hf">
+                <form action="/search" method="get">
+                    <input type="text" name="query" placeholder="Search...">
+                    <button type="submit"><i class="uil uil-search"></i></button>
+                </form>
+
+                <h1>ℌ𝔉𝔟𝔞𝔤𝔴𝔞𝔯𝔢</h1>
+
+                <div class="icons">
+                    <button><i class="uil uil-user"></i></button>
+                    <button><i class="uil uil-shopping-bag"></i></button>
+                </div>
+            </div>
+            <!-- <i class="uil uil-shutter-alt"></i> -->
+            <ul class="nav-menu">
+                <li><a class="active" href="index.html"><i class="uil uil-process"></i>NEW ARRIVALS</a></li>
+                <li><a href="bag.html"><i class="uil uil-award-alt"></i>BESTSELLERS</a></li>
+                <li><a href="bag.html"><i class="uil uil-bag"></i>BAGS</a></li>
+                <li><a href="accessories.html"><i class="uil uil-shutter-alt"></i>ACCESSORIES</a></li>
+                <li><a href="test.html"><i class="uil uil-right-indent-alt"></i>COLLECTIONS</a></li>
+                <li><a href=""><i class="uil uil-globe"></i>WORLD OF HFBAGWARE</a></li>
+                <li><a href="contact.html"><i class="uil uil-calling"></i>CONTACT US</a></li>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()"></a>
+            </ul>
+        </div>
+    </section>
+
+    <!-- -------------- END HEADER AND NAVBAR SECTION ----------------------  -->
+       
+    <!-- --------------------- SUB HEADING SECTION -------------------- -->
+
+    <section class="sub-header">
+        <div class="sub-header_container">
+            <div class="sub-header_content">
+                <div class="sub_title">
+                    <h1>ALL HANDBAGS</h1>
+                </div>
+
+                <div class="sub_paragraph">
+                    <p>Discover our full Collection of <l style="text-decoration: underline;">Totes, Crossbody bags, Shoulder bags </l> and <s style="text-decoration: underline;"> Mini bags</s>. 
+                    All hfbagware styles are beautifully handcrafted in<br> nigeria by the finest artisans, and can take up to 20 hours or more to make. 
+                    Architectural simplicity and elegant lines are complemented by the iconic<br> hfbagware bar closure,
+                     which makes every bag distinctive and instantly recognisable.</p>
+                </div>
             </div>
         </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <HR>
-            <div class="ROW">
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+            <!-- <div class="ROW">
                 <div class="COLUMN">
                     <img src="creative-headline-APNnyM36puU-unsplash (1).jpg" alt="Snow" style="width:100%">
                     <h3>LUST</h3>
@@ -148,14 +178,14 @@
                     <p>Bottle Green</p>
                     <b>N15,000</b>
                 </div>
-            </div>
+            </div> -->
 
 
             <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
             <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 
-            <div class="footer">
+            <footer class="footer">
                 <div class="inner_footer">
                     <div class="logo_container">
                         <img src="download-modified.png"/>
@@ -205,6 +235,6 @@
                     <p>HFbagware.com | designed by HFbagware. </p>
                 </div>
                 <!-- <img src="https://img.icons8.com/windows/32/000000/heart-lock.png   copyright &copy;2022 "/> -->
-            </div>
+            </footer>
 </body>
 </html>
