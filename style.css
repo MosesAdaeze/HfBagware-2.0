@@ -94,7 +94,7 @@ form {
 
 /* Style the search input */
 input[type="text"] {
-    width: 250px;
+    width: 200px;
     padding: 10px;
     height: 33px;
     border: 1px solid black;
@@ -264,7 +264,6 @@ form button[type="submit"] {
 }
 
 .column img{
-    border-radius: 1%;
     padding: 0 0 0.6rem 0;
 }
 
