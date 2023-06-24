@@ -2,22 +2,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Saira+Condensed:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Norican&family=Saira+Condensed:wght@300;400&family=Trocchi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Bebas+Neue&family=Black+Han+Sans&family=Bungee&family=Cinzel:wght@400;600&family=Gloock&family=Great+Vibes&family=Imperial+Script&family=Josefin+Sans&family=Kanit:wght@300&family=League+Spartan&family=Luxurious+Roman&family=Norican&family=Orbitron&family=Oswald&family=Poppins:wght@400;500;600&family=Prosto+One&family=Raleway:wght@400;500;600&family=Saira+Condensed:wght@300;400&family=Ubuntu:wght@400;500&display=swap');
 
 
 /* --------------------- SUB HEADING SECTION -------------------- */
 
 .sub-header_content {
     text-align: center;
-    border-bottom: 1px solid #c47777;
-    padding: 3rem 0 3rem 0;
+    padding: 5rem 0 3rem 0;
 }
 
 .sub_title {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-bottom: 2rem;
 }
 
 .sub_paragraph {
     font-size: 1.1rem;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 /* --------------------- BAG ITEM SECTION ---------------------  */
@@ -37,7 +40,6 @@
     width: 23%;
     min-width: 250px;
     padding: 10px 12px;
-    border: 1px solid #c47777;
     border-radius: 20px;
     cursor: pointer;
     box-shadow: 20px 20px 30px rgba(0,0,0,0.02);
@@ -51,6 +53,7 @@
 
 #product1 .pro img {
     width: 100%;
+    height: 80%;
     border-radius: 5px;
 }
 
@@ -58,23 +61,52 @@
     text-align: center;
 }
 
-#product1 .pro .des span {
-    color: #606063;
-    font-size: 12px;
-}
-
+/* bag name  */
 #product1 .pro .des h5 {
+    text-transform: uppercase;
     padding-top: 7px;
     color: #1a1a1a;
     font-size: 14px;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
+/* colors  */
+#product1 .pro .des span {
+    color: #606063;
+    font-size: 15px;
+}
+
+
+/* price  */
 #product1 .pro .des h4 {
     padding-top: 7px;
-    font-size: 15px;
+    font-size: 1.2rem;
     font-weight: 700;
     padding-bottom: 1rem;
     /* color: #088178; */
+}
+
+.button {
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.7rem;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button3 {
+    background-color: white; 
+    color: black; 
+    margin-top: 0.7rem;
+    border: 2px solid black;
+}
+  
+.button3:hover {
+    background-color: black;
+    color: white;
 }
 
 #product1 .pro .cart {
