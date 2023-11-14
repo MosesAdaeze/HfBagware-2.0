@@ -3,7 +3,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Saira+Condensed:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Norican&family=Saira+Condensed:wght@300;400&family=Trocchi&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Bebas+Neue&family=Black+Han+Sans&family=Bungee&family=Cinzel:wght@400;600&family=Gloock&family=Great+Vibes&family=Imperial+Script&family=Josefin+Sans&family=Kanit:wght@300&family=League+Spartan&family=Luxurious+Roman&family=Norican&family=Orbitron&family=Oswald&family=Poppins:wght@400;500;600&family=Prosto+One&family=Raleway:wght@400;500;600&family=Saira+Condensed:wght@300;400&family=Ubuntu:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Raleway&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 /* --------------------- SUB HEADING SECTION -------------------- */
 
@@ -180,3 +187,146 @@
 /* .uil {
     font-size: 1rem;
 }  */
+
+
+/* -------------- CONTACT US CSS SECTION -------------  */
+.contact-us_container {
+    margin-bottom: 3rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+.contact-us_container h1{
+    padding: 3rem 0 4rem 0;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 500;
+    font-family: 'Merriweather', serif;
+}
+
+.mapTwo {
+    display: none;
+}
+
+.contact-us_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 5% 0 5%;
+    gap: 2rem;
+}
+
+.contact_info h2{
+    padding: 0 0 2rem 0;
+}
+
+.info li{
+    padding: 0 0 1rem 0;
+}
+
+.info ul {
+    margin-bottom: 1.8rem;
+}
+
+.info li span {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.form_container {
+    width: 655px;
+    height: 50%;
+    background-color: aliceblue;
+}
+
+.contact_form {
+    padding: 2rem 2rem 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+label {
+    /* font-weight: 600; */
+    margin: 0.2rem;
+}
+
+input, textarea {
+    border: none;
+    font-size: 0.9rem;
+    width: 100%;
+    padding: 0.6rem;
+}
+
+button {
+    border: none;
+    background-color: #fff;
+    font-size: 1rem;
+    padding: 0 4px;
+    cursor: pointer;
+    margin-top: 0.8rem;
+}
+
+.botton {
+    padding: 0.5rem 0 0.5rem 0;
+    width: 20%;
+}
+
+button:hover {
+    /* background-color: aliceblue; */
+    width: 22%;
+}
+
+@media (max-width: 1378px) {
+    .contact-us_content {
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: center;
+    }
+
+    .form_container {
+        width: 50%;
+    }
+
+    .info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .form_container {
+        /* width: 550px; */
+        width: 80%;
+        height: 50%;
+    }
+}
+
+@media (max-width: 940px) {
+    iframe {
+        width: 450px;
+        height: 355px;
+    }
+}
+
+@media (max-width: 800px) {
+    iframe {
+        width: 80vw;
+        height: 50vh;
+    }
+
+    .info {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .mapTwo {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .map {
+        display: none;
+    }
+}

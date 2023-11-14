@@ -88,12 +88,12 @@ button {
 }
 
 /* Style the search bar container */
-form {
+.form {
     border: none;
 }
 
 /* Style the search input */
-input[type="text"] {
+.input[type="text"] {
     width: 200px;
     padding: 10px;
     height: 33px;
@@ -103,7 +103,7 @@ input[type="text"] {
 }
   
   /* Style the search button */
-form button[type="submit"] {
+.form button[type="submit"] {
     margin: -50px;
     width: 32px;
     font-size: 1.4rem;
@@ -175,7 +175,7 @@ form button[type="submit"] {
 }
 
 @keyframes change {
-    0% {
+    10% {
         background-image: url(images/home\ \(2\).jpg);
     }
     20% {
