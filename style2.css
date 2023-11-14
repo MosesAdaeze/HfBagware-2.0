@@ -123,8 +123,8 @@
     background-color: #e9e9e9;
 } */
 
-/* ---------------------- COLLETIONS PAGE ----------------------  */
 
+/* ---------------------- COLLETIONS PAGE ----------------------  */
 .collection_header h1 {
     padding: 3rem 0 2rem 0;
     font-size: 1.8rem;
@@ -184,12 +184,9 @@
     max-height: 75vh;
 }
 
-/* .uil {
-    font-size: 1rem;
-}  */
+/* --------------------  END COLLECTION SECTION ----------------  */
 
-
-/* -------------- CONTACT US CSS SECTION -------------  */
+/* ------------------------ CONTACT US CSS SECTION ---========----------  */
 .contact-us_container {
     margin-bottom: 3rem;
     font-family: 'Raleway', sans-serif;
@@ -276,15 +273,13 @@ button:hover {
     width: 22%;
 }
 
+/* ------------------------- MEDIA QUERY SECTION IN CONTACT ME SECTION ----------------  */ 
+
 @media (max-width: 1378px) {
     .contact-us_content {
         flex-direction: column;
         gap: 2rem;
         justify-content: center;
-    }
-
-    .form_container {
-        width: 50%;
     }
 
     .info {
@@ -297,12 +292,17 @@ button:hover {
 
     .form_container {
         /* width: 550px; */
-        width: 80%;
+        width: 60%;
         height: 50%;
     }
 }
 
 @media (max-width: 940px) {
+    .form_container {
+        /* width: 550px; */
+        width: 70%;
+        height: 50%;
+    }
     iframe {
         width: 450px;
         height: 355px;
@@ -313,6 +313,12 @@ button:hover {
     iframe {
         width: 80vw;
         height: 50vh;
+    }
+
+    .form_container {
+        /* width: 550px; */
+        width: 80%;
+        height: 50%;
     }
 
     .info {
@@ -330,3 +336,44 @@ button:hover {
         display: none;
     }
 }
+
+/* --------------------  END CONTACT ME SECTION ----------------  */
+
+
+/* ----------------- FOOOTER SECTION ------------------  */
+.footer {
+    margin: 3% 8% 5% 8%;
+}
+
+hr {
+    font-weight: 900;
+}
+
+.footer_container h2 {
+    padding: 3rem 0 1rem 0;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 500;
+    font-family: 'Merriweather', serif;
+    text-transform: capitalize;
+}
+
+.footer_socials {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.footer_socials li i {
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 500;
+    transition: transform .2s;
+}
+
+.footer_socials li:hover {
+    transform: scale(1.2);
+}
+
+/* --------------------- END FOOTER SECTION -----------------  */
