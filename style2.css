@@ -16,7 +16,7 @@
 
 .sub-header_content {
     text-align: center;
-    padding: 5rem 0 3rem 0;
+    padding: 5rem 5% 3rem 5%;
 }
 
 .sub_title {
@@ -28,6 +28,7 @@
 .sub_paragraph {
     font-size: 1.1rem;
     font-family: 'Josefin Sans', sans-serif;
+    padding-bottom: 2%;
 }
 
 /* ---------------------BAG / ACCESSORIES ITEM SECTION ---------------------  */
@@ -37,17 +38,19 @@
 }
 
 #product1 .pro-container {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 10px;
-    flex-wrap: wrap;
+    padding: 10px 8% 0 8%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* display: flex;
+    justify-content: space-between; */
+    /* flex-wrap: wrap; */
 }
 
 #product1 .pro {
-    width: 23%;
-    min-width: 250px;
+    /* width: 23%; */
+    /* min-width: 300px; */
     padding: 10px 12px;
-    border-radius: 20px;
+    border-radius: 25px;
     cursor: pointer;
     box-shadow: 20px 20px 30px rgba(0,0,0,0.02);
     margin: 15px 0;
@@ -62,6 +65,7 @@
     width: 100%;
     height: 80%;
     border-radius: 5px;
+    margin-bottom: 3%;
 }
 
 #product1 .pro .des {
@@ -88,7 +92,7 @@
     padding-top: 7px;
     font-size: 1.2rem;
     font-weight: 700;
-    padding-bottom: 1rem;
+    padding-bottom: 0.6rem;
     /* color: #088178; */
 }
 
@@ -108,6 +112,7 @@
     color: black; 
     margin-top: 0.7rem;
     border: 2px solid black;
+    margin-bottom: 30%;
 }
   
 .button3:hover {
@@ -126,7 +131,8 @@
 
 /* ---------------------- COLLETIONS PAGE ----------------------  */
 .collection_header h1 {
-    padding: 3rem 5% 2rem 5%;
+    padding: 0 5% 0 5%;
+    padding-block: min(5%, 6vh);
     font-size: 1.8rem;
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
@@ -227,19 +233,15 @@
     }
 }
 
+@media (max-width: 550px) {
+    .collection_content1 img {
+        width: 100%;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
+    .collection_contents img {
+        width: 100%;
+    }
+} 
 
 /* --------------------  END COLLECTION SECTION ----------------  */
 
@@ -300,7 +302,6 @@
 }
 
 label {
-    /* font-weight: 600; */
     margin: 0.2rem;
 }
 
@@ -311,23 +312,23 @@ input, textarea {
     padding: 0.6rem;
 }
 
-button {
+.sendBtn {
     border: none;
     background-color: #fff;
-    font-size: 1rem;
-    padding: 0 4px;
+    padding: 5px;
     cursor: pointer;
     margin-top: 0.8rem;
+    width: 25%;
+    transition: transform .2s;
+    text-align: center;
 }
 
-.botton {
-    padding: 0.5rem 0 0.5rem 0;
-    width: 20%;
+.sendBtn button{
+    font-size: 18px;
 }
 
-button:hover {
-    /* background-color: aliceblue; */
-    width: 22%;
+.sendBtn:hover {
+    transform: scale(1.2);
 }
 
 /* ------------------------- MEDIA QUERY SECTION IN CONTACT ME SECTION ----------------  */ 
