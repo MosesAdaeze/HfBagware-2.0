@@ -6,7 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Noto+Sans&family=Raleway&family=Roboto&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Merriweather:wght@700&family=Noto+Sans&family=Pacifico&family=Raleway&family=Roboto&family=Sulphur+Point&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -38,9 +38,10 @@ font-family: 'Roboto', sans-serif;
     font-family: 'Josefin Sans', sans-serif;
     padding-bottom: 2.5%;
 }
+/* --------------------- END SUB HEADING SECTION -------------------- */
+
 
 /* ---------------------BAG / ACCESSORIES ITEM SECTION ---------------------  */
-
 #product1 {
     text-align: center;
 }
@@ -48,12 +49,8 @@ font-family: 'Roboto', sans-serif;
 #product1 .pro-container {
     padding: min(3px, 10vh);
     padding: 0 5% 0 5%;
-    /* padding: 10px 8% 0 8%; */
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    /* display: flex;
-    justify-content: space-between; */
-    /* flex-wrap: wrap; */
 }
 
 #product1 .pro {
@@ -360,7 +357,7 @@ input, textarea {
     transform: scale(1.2);
 }
 
-/* ------------------------- MEDIA QUERY SECTION IN CONTACT ME SECTION ----------------  */ 
+/* ------------------------- MEDIA QUERY SECTION IN CONTACT US SECTION ----------------  */ 
 
 @media (max-width: 1378px) {
     .contact-us_content {
@@ -424,10 +421,7 @@ input, textarea {
     }
 }
 
-/* --------------------  END CONTACT ME SECTION ----------------  */
-
-
-/* ----------------- FOOOTER SECTION ------------------  */
+/* ----------------- FOOTER SECTION FOR CONTACT PAGE------------------  */
 #footer {
     font-family: 'Noto Sans', sans-serif;
 }
@@ -463,29 +457,26 @@ hr {
     transition: transform .2s;
 }
 
-.footer_socials li:hover {
+.footer_socials li:hover,
+.footer_socials li i:hover {
     transform: scale(1.2);
+    color: #ba0c2f;
 }
 
-/* --------------------- END FOOTER SECTION -----------------  */
+/* --------------------- END FOOTER SECTION FOR CONTACT PAGE -----------------  */
+/* --------------------  END CONTACT ME SECTION ----------------  */
+
+
+/* ----------------------  FOOTER FOOTER SECTION DIV ----------------  */
 .footer_containerr {
-    /* max-width: 1000vw; */
-    padding: 10% 15% 4% 20%;
+    padding: 5% 15% 4% 20%;
 }
 
 .footer_content {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 5%;
-    align-self: center;
-    /* justify-content: center; */
 }
-
-/* .footer_content {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}  */
 
 .footer_first {
     line-height: 2.3;
@@ -536,19 +527,14 @@ hr {
     transform: scale(1.2);
 }
 
+/* ------------------------- MEDIA QUERY FOOTER SECTION ----------------  */ 
 @media (max-width: 1290px) {
     .footer_content {
-        /* gap: 10%; */
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
- /* FAQS STYLING  */
-
-/* #arrow-up {
-    display: none;
-} */
-
+/* ----------------- PHONE SIZE FOOTER SECTION ----------------------  */
 .footerContainer {
     padding: 1rem 0 1rem 0;
     max-width: 900px;
@@ -608,6 +594,7 @@ hr {
     line-height: 1.4;
 }
 
+/* ------------------------- MEDIA QUERY PHONE SIZE FOOTER SECTION ----------------  */ 
 @media (max-width: 950px) {
     .footer_containerr {
         padding: 20% 3% 4% 3%;
@@ -645,3 +632,4 @@ hr {
         display: none;
     }
 }
+/* --------------------  END PHONE SIZE FOOTER SECTION ----------------  */

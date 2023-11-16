@@ -357,10 +357,11 @@ button {
 }
 /* ------------------END ABOUT US SECTION ------------------ */
 
-/* ----------------- START BGDOWN SECTION -----------------*/
-.banner {
+/* ----------------- START (BGDOWN) BANNER SECTION -----------------*/
+/* .banner {
     padding: 4rem 0 4rem 0;
 }
+
 .banner_content {
     display: flex;
     align-items: center;
@@ -403,23 +404,68 @@ button {
     font-size: 1.1rem;
     color: #cac9c9;
     text-decoration: underline;
+} */
+
+
+/* ----------------------------- BANNER (NEWSPAPAR) SECTION ----------------  */
+.banner_container {
+    margin-top: 5%;
+    padding: 3%;
+    text-align: center;
+    background-color: #fff4f8;
+    line-height: 2;
 }
 
-/* --------------------- FOOTER ----------------------*/
+.banner_content h2{
+    font-size: 2rem;
+    font-family: 'Pacifico', sans-serif;
+    line-height: 2.8;
+    word-spacing: 5px;
+}
 
+.banner_content p {
+    /* font-family: 'Agbalumo', sans-serif; */
+    font-family: 'Sulphur Point', sans-serif;
+    font-size: .9em;
+}
 
+.btn-signup {
+    padding-top: 2.3%;    
+}
 
+.socials-icons {
+    justify-content: center;
+}
 
+.socials-icons li i {
+    line-height: 2;
+    font-size: 1.6rem;
+}
+.btns {
+    padding: .7% 12% .7% 12%;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    font-size: .9rem;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-family: 'Sulphur Point', sans-serif;
+    font-weight: 700;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-/* -------------------- END OF FOOTER -------------------------*/
+.button6 {
+    background-color: white; 
+    color: black; 
+    margin-top: 0.7rem;
+    border: 2px solid black;
+    margin-bottom: 1%;
+}
+  
+.button6:hover {
+    background-color: black;
+    color: white;
+}
+/* #fff4f8; */
+/* #ba0c2f; */
