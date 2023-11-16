@@ -16,7 +16,7 @@
 
 .sub-header_content {
     text-align: center;
-    padding: 5rem 5% 3rem 5%;
+    padding: 4rem 5% 3rem 5%;
 }
 
 .sub_title {
@@ -28,7 +28,7 @@
 .sub_paragraph {
     font-size: 1.1rem;
     font-family: 'Josefin Sans', sans-serif;
-    padding-bottom: 2%;
+    padding-bottom: 2.5%;
 }
 
 /* ---------------------BAG / ACCESSORIES ITEM SECTION ---------------------  */
@@ -38,7 +38,9 @@
 }
 
 #product1 .pro-container {
-    padding: 10px 8% 0 8%;
+    padding: min(3px, 10vh);
+    padding: 0 5% 0 5%;
+    /* padding: 10px 8% 0 8%; */
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     /* display: flex;
@@ -119,6 +121,43 @@
     background-color: black;
     color: white;
 }
+/* ------------------------- MEDIA QUERY SECTION IN BAGS / ACCESSORIES SECTION ----------------  */
+@media (max-width: 1290px) {
+    #product1 .pro-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 950px) {
+    #product1 .pro-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 700px) {
+    #product1 .pro-container {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0 6% 0 6%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* --------------------- BAGS / ACCESSORIES ITEM SECTION ---------------------  */
