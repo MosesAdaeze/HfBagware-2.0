@@ -407,21 +407,19 @@ button {
 
 /* --------------------- FOOTER ----------------------*/
 
-footer {
-    display: flex;
-    background-color: black;
-}
 
 
-.footer_third {
-    color: #fff;
-}
 
-.footer_third a {
-    color: #fff;
-}
 
-.footer_third span {
-    color: #fff;
-}
+
+
+
+
+
+
+
+
+
+
+
 /* -------------------- END OF FOOTER -------------------------*/
