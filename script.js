@@ -37,3 +37,15 @@ var swiper = new Swiper(".card_slider", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+
+  // FAQS 
+  function toggleAnswer(index) {
+    var answer = document.getElementById('answer-' + index);
+    if (answer.style.display === 'none') {
+        answer.style.display = 'block';
+
+    } else {
+        answer.style.display = 'none';
+    }
+}
