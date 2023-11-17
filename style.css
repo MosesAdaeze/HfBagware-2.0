@@ -6,6 +6,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Norican&family=Oswald&family=Saira+Condensed:wght@300;400&family=Trocchi&family=Yuji+Hentaigana+Akebono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Luxurious+Roman&family=Norican&family=Oswald&family=Saira+Condensed:wght@300;400&family=Trocchi&family=Yuji+Hentaigana+Akebono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Bebas+Neue&family=Black+Han+Sans&family=Bungee&family=Cinzel:wght@400;600&family=Gloock&family=Great+Vibes&family=Imperial+Script&family=Kanit:wght@300&family=League+Spartan&family=Luxurious+Roman&family=Norican&family=Oswald&family=Poppins:wght@400;500;600&family=Prosto+One&family=Raleway:wght@400;500;600&family=Saira+Condensed:wght@300;400&family=Ubuntu:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Merriweather:wght@700&family=Noto+Sans&family=Pacifico&family=Raleway&family=Roboto&family=Sulphur+Point&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Merriweather:wght@700&family=Noto+Sans&family=Pacifico&family=Raleway&family=Roboto&family=Roboto+Slab&family=Sulphur+Point&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -207,12 +210,13 @@ button {
 
 .text span p{
     padding: 1rem 0;
-    font-family: 'Orbitron', sans-serif;
+    /* font-family: 'Orbitron', sans-serif; */
+    font-family: 'Roboto Slab', sans-serif;
     font-size: 1.2rem;
     font-weight: 100;
 }
 
-.button {
+.button1 {
     border: none;
     color: white;
     padding: 10px 28px;
@@ -230,6 +234,7 @@ button {
     color: black; 
     margin-top: 0.7rem;
     border: 2px solid black;
+    font-family: 'Orbitron', sans-serif;
 }
   
 .button1:hover {
@@ -238,7 +243,11 @@ button {
 }
 /*   ------------------- END NEW ARRIVAL SECTION ------------------------*/
 
-/* ---------------- START VALUT SECTION -------------*/
+
+/* ---------------- START VAulT SECTION -------------*/
+.vault_content {
+    font-family: 'Sulphur Point', sans-serif;
+}
 
 .vault_header {
     text-align: center;
@@ -277,6 +286,7 @@ button {
     font-size: 1rem;
 }
 
+ /* ------------------------------------ @ MEDIA QUERY FOR VAULT SECTION --------------------  */
 @media screen and (max-width: 500px) {
     .column {
       width: 100%;
@@ -302,10 +312,12 @@ button {
 
 .about_content {
     display: flex;
+    font-family: 'Sulphur Point', sans-serif;
     /* padding: 2rem 3rem; */
 }
 
 .about_left_text {
+    padding: 1%;
     width: 50%;
     height: 60rem;
     background-color: black;
@@ -335,6 +347,7 @@ button {
 }
 
 .button2 {
+    padding: 1% 4% 1% 4%;
     font-size: 110%;
     background-color: white; 
     color: black; 
@@ -343,7 +356,7 @@ button {
 }
   
 .button2:hover {
-    background-color: #cac9c9;
+    background-color: #b3abab;
     color: black;
 }
 
@@ -405,6 +418,87 @@ button {
     color: #cac9c9;
     text-decoration: underline;
 } */
+/* --------------------------------------- FEATURED SECTION --------------------------  */
+.feature_section_container {
+    padding: 6% 3% 6% 3%;
+    font-family: 'Sulphur Point', sans-serif;
+}
+
+.feature_section_content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.feature {
+    position: relative;
+    color: white;
+    overflow: hidden;
+    /* transition: transform .2s ease;/ */
+    /* color: #f1f1f1; */
+}
+
+.feature_details {
+    position: absolute;
+    bottom: 150px;
+    left: 16px;
+}
+
+.feature img {
+    width: 100%;
+    transition: transform .2s;
+}
+
+.feature:hover img {
+    transform: scale(1.1);
+}
+
+/* background: rgb(0, 0, 0); 
+background: rgba(0, 0, 0, 0.5);
+color: #f1f1f1; */
+
+.feature_details h3 {
+    text-align: center;
+}
+
+/* ------------------------------------ BAG MODELS CONTAIINER SECTION -----------------------  */
+.designer_title {
+    text-align: center;
+    text-transform:  uppercase;
+    letter-spacing: 2px;
+    line-height: 2;
+    margin: 5% 0 3% 0;
+    font-size: 2.3rem;
+    font-family: 'Sulphur Point', sans-serif;
+}
+
+.designer_row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0%;
+}
+
+.designer_columns {
+    flex: 20%;
+    max-width: 50%;
+}
+
+.designer_columns img {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* ----------------------------- BANNER (NEWSPAPAR) SECTION ----------------  */
@@ -441,6 +535,7 @@ button {
     line-height: 2;
     font-size: 1.6rem;
 }
+
 .btns {
     padding: .7% 12% .7% 12%;
     border: none;
