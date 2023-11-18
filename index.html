@@ -25,7 +25,7 @@
         </div>
     </div>
 
-    <section class="header">
+    <section id="header" class="header box">
         <div class="header_content">
             <div class="hf">
                 <form class="form" action="/search" method="get">
@@ -41,15 +41,18 @@
                 </div>
             </div>
             <!-- <i class="uil uil-shutter-alt"></i> -->
-            <ul class="nav-menu">
-                <li><a class="active" href="index.html"><i class="uil uil-process"></i>NEW ARRIVALS</a></li>
-                <li><a href="bag.html"><i class="uil uil-bag"></i>BAGS</a></li>
-                <li><a href="accessories.html"><i class="uil uil-wallet"></i></i>ACCESSORIES</a></li>
-                <li><a href="collection.html"><i class="uil uil-box"></i>COLLECTIONS</a></li>
-                <li><a href="about.html"><i class="uil uil-globe"></i>WORLD OF HFBAGWARE</a></li>
-                <li><a href="contact.html"><i class="uil uil-calling"></i>CONTACT US</a></li>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()"></a>
-            </ul>
+            <div class="nav-menu">
+                <div class="hamburger"><div class="bar"></div></div>
+                <ul>
+                    <li><a class="active" href="index.html" data-after="Home"><i class="uil uil-process"></i>NEW ARRIVALS</a></li>
+                    <li><a href="bag.html" data-after="bag"><i class="uil uil-bag"></i>BAGS</a></li>
+                    <li><a href="accessories.html" data-after="accessories"><i class="uil uil-wallet"></i></i>ACCESSORIES</a></li>
+                    <li><a href="collection.html"><i class="uil uil-box"></i>COLLECTIONS</a></li>
+                    <li><a href="about.html"><i class="uil uil-globe"></i>WORLD OF HFBAGWARE</a></li>
+                    <li><a href="contact.html"><i class="uil uil-calling"></i>CONTACT US</a></li>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()"></a>
+                </ul>
+            </div>
         </div>
     </section>
 
@@ -59,28 +62,25 @@
 
     <section class="hero">
         <div class="hero_content">
-            <!-- <img class="home-img" src="" /> -->
             <div class="home-img">
-                <img src="images/home (2).jpg" alt="">
+                <!-- <img src="images/home (2).jpg" alt=""> -->
             </div>
 
             <div class="text">
-                <span>
-                    <h1>NEW ARRIVALS</h1>
-                    <p>Discover new collection,<br/>
-                        in a palette of warm neutrals<br/>
-                        that will elevate your everyday.<br/>
-                        <!-- - And deasonal textures and exclusive colourways</p> -->
-                    </p>
-                </span>
+                <h1>NEW ARRIVALS</h1>
+                <p>Discover new collection,<br/>
+                    in a palette of warm neutrals<br/>
+                    that will elevate your everyday.<br/>
+                    <!-- - And deasonal textures and exclusive colourways</p> -->
+                </p>
                 <button class="button1">shop now<a href="bag.html"></a></button>
             </div>
         </div>
     </section>
+    <!-- ----------------- BEGIN HOMEPAGE IMAGE SECTION --------------------   -->
 
-      <!-- ----------------- BEGIN HOMEPAGE IMAGE SECTION  -->
+
       <!-- --------------------------- LATEST BAG SECTION -----------------------  -->
-
       <div class="latest_section_container">
         <div class="latest_section_content">
             <div class="left_image">
@@ -95,9 +95,42 @@
             </div>
         </div>
       </div>
-    
-      <!-- ----------------- BEGIN VAULT IMAGE SECTION  -->
+      <!-- /* --------------------------------- WINTER BAG SECTION ------------------------  */ -->
 
+          <!-- ----------------------- FEATURED SECTION -------------------------  -->
+    <div class="feature_section_container">
+        <h3 class="feature_title">
+            Changing the world, one bag at a time.
+        </h3>
+        <div class="feature_section_content">
+            <div class="feature">
+                <img src="images/designer2.png" alt="featureBag" style="width: 100%;">
+                <div class="feature_details">
+                    <h3>ethically made</h3>
+                    <p>Meet the people responsible for making your bag</p>
+                </div>
+            </div>
+
+            <div class="feature">
+                <img src="images/designers.png" alt="featureBag" style="width: 100%;">
+                <div class="feature_details">
+                    <h3>2040 vision</h3>
+                    <p>Learn more about our priorities in sustainability </p>
+                </div>
+            </div>
+
+            <div class="feature">
+                <img src="images/designer3.png" alt="featureBag" style="width: 100%;">
+                <div class="feature_details">
+                    <h3>hf collection</h3>
+                    <p>Shop our collection of hf bags and accessories</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+      <!-- ----------------- BEGIN VAULT IMAGE SECTION  -->
     <section class="vault">
         <div class="vault_content">
             <div class="vault_header">
@@ -158,52 +191,22 @@
         </div>
     </section>
 
-    <!-- ----------------------- maywuifhiu-------------------------  -->
-    <div class="feature_section_container">
-        <h3 class="feature_title">
-            Changing the world, one bag at a time.
-        </h3>
-        <div class="feature_section_content">
-            <div class="feature">
-                <img src="images/designer2.png" alt="featureBag" style="width: 100%;">
-                <div class="feature_details">
-                    <h3>ethically made</h3>
-                    <p>Meet the people responsible for making your bag</p>
-                </div>
-            </div>
+    <!-- ----------------------- END ABOUT SECTION -------------------------  -->
 
-            <div class="feature">
-                <img src="images/designers.png" alt="featureBag" style="width: 100%;">
-                <div class="feature_details">
-                    <h3>2040 vision</h3>
-                    <p>Learn more about our priorities in sustainability </p>
-                </div>
-            </div>
-
-            <div class="feature">
-                <img src="images/designer3.png" alt="featureBag" style="width: 100%;">
-                <div class="feature_details">
-                    <h3>hf collection</h3>
-                    <p>Shop our collection of hf bags and accessories</p>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- ------------------------------ BAG MODELS CONTAINER SECTION --------------------------------  -->
-
     <div class="designer_section_container">
         <div class="designer_content">
             <h2 class="designer_title">See people that wore our bag</h2>
             <div class="designer_row">
                 <div class="designer_columns">
-                    <img src="images/modelbag1.png" alt="">
-                    <img src="images/modelbag1.png" alt="">
+                    <img src="images/model3.png" alt="">
+                    <img src="images/model1.png" alt="">
                 </div>
 
                 <div class="designer_columns">
                     <img src="images/modelbag1.png" alt="">
-                    <img src="images/modelbag1.png" alt="">
+                    <img src="images/model3.png" alt="">
                 </div>
             </div>
         </div>

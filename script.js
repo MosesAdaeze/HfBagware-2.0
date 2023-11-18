@@ -1,3 +1,22 @@
+const hamburger = document.querySelector('.header .header_content .nav-menu .hamburger');
+const mobile_menu = document.querySelector('.header .header_content .nav-menu ul');
+const menu_item = document.querySelectorAll('.header .header_content .nav-menu ul li a');
+const header = document.querySelector('.header .box'); 
+
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    mobile_menu.classList.toggle('active');
+});
+
+menu_item.forEach(item=>{
+    item.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        mobile_menu.classList.toggle('active');
+    });
+});
+// Nav bar menu .
+
+
 // Get the reference to the <h3> element
 var heading = document.getElementById("changing-text");
 
