@@ -321,7 +321,7 @@ font-family: 'Roboto', sans-serif;
     /* background-color: aliceblue; */
 }
 
-.contact_form {
+.contact_form form {
     padding: 2rem 2rem 3rem 2rem;
     display: flex;
     flex-direction: column;
@@ -350,12 +350,12 @@ input, textarea {
     text-align: center;
 }
 
-.sendBtn button{
-    font-size: 18px;
+.sendBtn {
+    font-size: 16px;
 }
 
 .sendBtn:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 /* ------------------------- MEDIA QUERY SECTION IN CONTACT US SECTION ----------------  */ 
