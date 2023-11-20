@@ -1,58 +1,36 @@
-/* .course-options_content {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hf-world-container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-} */
-
-/* .course-options_content ul {
-    display: flex;
-} */
-
-.options_list {
-    display: flex;
-    gap: 5rem;
+    flex-direction: column;
+    justify-content: center;
+    /* margin: auto; */
 }
 
-.options_list li{
-    position: relative;
-    color: black;
-    cursor: pointer;
+.hf-image {
+    margin: auto;
+    padding: 0 5% 0 5%;
 }
 
-.options_list li.active{
-    color: var(--color-thickgreen);
+.hf-image img {
+    width: 100%;
 }
 
-.options_list li.active::after {
-    background-color: var(--color-thickgreen);
+.hf-description {
+    padding: 2% 10% 4% 10%;
+    text-align: center;
 }
 
-.options_list li::after,
-.options_list li a {
-    position: relative;
-    color: black;
+.hf-description-title {
+    font-size: 2rem;
+    text-transform: uppercase;
+    line-height: 2;
 }
 
-.options_list li a.active{
-    color: var(--color-thickgreen);
-}
-
-.options_list li.active::after {
-    background-color: var(--color-thickgreen);
-}
-
-.options_list li::after {
-    content: ' ';
-    display: block;
-    height: 2px;
-    background-color: black;
-    bottom: -4px;
-    width: 0;
-    position: absolute;
-    transition: all ease-in-out 250ms;
-}
-
-.options_list li:hover::after,
-.options_list li.active::after{
-   width: 100%;
+.hf-description-body {
+    font-size: 1.5rem;
 }
