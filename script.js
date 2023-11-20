@@ -1,20 +1,56 @@
-const hamburger = document.querySelector('.header .header_content .nav-menu .hamburger');
-const mobile_menu = document.querySelector('.header .header_content .nav-menu ul');
-const menu_item = document.querySelectorAll('.header .header_content .nav-menu ul li a');
-const header = document.querySelector('.header .box'); 
+// const hamburger = document.querySelector('.header .header_content .nav-menu .hamburger');
+// const mobile_menu = document.querySelector('.header .header_content .nav-menu ul');
+// const menu_item = document.querySelectorAll('.header .header_content .nav-menu ul li a');
+// const header = document.querySelector('.header .box'); 
 
-hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
-    mobile_menu.classList.toggle('active');
-});
+// hamburger.addEventListener('click', () => {
+//     hamburger.classList.toggle('active');
+//     mobile_menu.classList.toggle('active');
+// });
 
-menu_item.forEach(item=>{
-    item.addEventListener('click', () => {
-        hamburger.classList.toggle('active');
-        mobile_menu.classList.toggle('active');
-    });
-});
+// menu_item.forEach(item=>{
+//     item.addEventListener('click', () => {
+//         hamburger.classList.toggle('active');
+//         mobile_menu.classList.toggle('active');
+//     });
+// });
 // Nav bar menu .
+
+// let header = document.querySelector('.header');
+// let bar = document.querySelector('#bar');
+// let navbar = document.querySelector('.nav-bar');
+
+// bar.onclick = () => {
+//   bar.classList.toggle('uil-x');
+//   navbar.classList.toggle('active');
+// }
+
+// window.onscroll = () => {
+//   bar.classList.remove('uil-x');
+//   navbar.classList.remove('active');
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // Get the reference to the <h3> element

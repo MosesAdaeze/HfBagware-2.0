@@ -156,105 +156,55 @@ button {
     display: table;
 }
 
+.nav-menu #bar{
+    font-size: 24px;
+    color: black;
+    cursor: pointer;
+    z-index: 1000001;
+    display: none;
+}
+
 /* ----------hamburger -----------  */
 
-#header .hamburger {
-    height: 60px;
-    width: 60px;
-    display: inline-block;
-    border: 3px solid #49274A;
-    border-radius: 50%;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 100;
-    cursor: pointer;
-    transform: scale(.8);
-    margin-right: 20px;
-    /* background-color: #061422; */
-}
 
-#header .hamburger:after {
-    position: absolute;
-    content: '';
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
-    border: 3px solid #49274A;
-    animation: hamburger_puls 1s ease infinite;
-}
-
-#header .hamburger .bar {
-    height: 2px;
-    width: 30px;
-    position: relative;
-    background-color: #49274A;
-    z-index: -1;
-}
-
-#header .hamburger .bar::after,
-#header .hamburger .bar::before{
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    left: 0;
-    background-color: #94618E;
-    transition: .3s ease;
-    transition-property: top, bottom;
-}
-
-#header .hamburger .bar::after {
-    top: 8px;
-}
-
-#header .hamburger .bar::before {
-    bottom: 8px;
-}
-
-#header .hamburger.active .bar::before {
-    bottom: 0;
-}
-
-#header .hamburger.active .bar::after {
-    top: 0;
-}
-
-/* -------------- keyframes / MEDIA QUERY ------------- */
-@keyframes hamburger_puls{
-    0%{
-        opacity: 1;
-        transform: scale(1);  
+@media only screen and (max-width: 1039px) {
+    #bar {
+        display: initial;
+        color: black;
     }
 
-    100%{
-        opacity: 0;
-        transform: scale(1.5);  
+    .nav-bar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        row-gap: 1.8rem; 
+        color: black;
+        padding: 20px;
+        transition: 0.2s all linear;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     }
-}
 
-@media only screen and (min-width: 1039px) {
-    #header .hamburger {
-        display: none;
-    }
-
-    #header .nav-menu ul {
-        position: initial;
+    .nav-bar li a::before{
+        content: " ";
         display: block;
-        height: auto;
-        width: fit-content;
-        background-color: transparent;
+        height: 2.5px;
+        background-color: black;
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        width: 0%;
+        transition: all ease-in-out 250ms;
     }
 
-    #header .nav-menu ul li {
-        display: inline-block;
-    }
-
-    #header .nav-menu:after {
+    .nav-bar li a::after {
         display: none;
     }
 }
+
  /* ---------------- END HEADER/NAVBAR SECTION ---------------  */
 
 
@@ -365,7 +315,7 @@ button {
 
 .latest_details {
     text-transform: uppercase;
-    padding-right: 10%;
+    padding-right: 5%;
     text-align: center;
     line-height: 1.5;
 }
@@ -379,57 +329,26 @@ button {
     font-size: 1rem;
 }
 
-/* --------------------------------- WINTER BAG SECTION ------------------------  */
-
-/* ---------------- START VAulT SECTION -------------*/
-.vault_content {
-    font-family: 'Sulphur Point', sans-serif;
-}
-
-.vault_header {
-    text-align: center;
-    font-size: 1.2rem;
-    font-variant: small-caps;
-    padding: 4rem 0 3rem 0;
-}
-
-.vault_columns {
-    display: flex;
-    gap: 2rem;
-}
-
-.vault_columns {
-    text-align: center;
-}
-
-.column h4 a{
-    color: black;
-    font-size: 1.5rem;
-    text-transform: capitalize;
-    text-decoration: none;
-}
-
-.column img{
-    padding: 0 0 0.6rem 0;
-}
-
-.column h4 {
-    margin-bottom: 1rem;
-}
-
-.column span a {
-    text-decoration: underline;
-    color: black;
-    font-size: 1rem;
-}
-
- /* ------------------------------------ @ MEDIA QUERY FOR VAULT SECTION --------------------  */
-@media screen and (max-width: 500px) {
-    .column {
-      width: 100%;
+/* ------------------- @MEDIA QUERY SECTION ---------------------  */
+@media (max-width: 900px) {
+    .latest_section_container {
+        padding: 12% 0 0 0;
     }
-} 
-/* ------------------------------ END VAULT SECTION -----------------------*/
+    .latest_section_content {
+        flex-direction: column-reverse;
+        row-gap: 3rem;
+    }
+    
+    .left_image img {
+        width: 100%;
+    }
+    
+    .latest_details h3 {
+        font-size: 2rem;
+    }
+}
+
+/* --------------------------------- WINTER BAG SECTION ------------------------  */
 
 /* --------------------------------------- FEATURED SECTION --------------------------  */
 .feature_section_container {
@@ -474,14 +393,100 @@ button {
     transform: scale(1.1);
 }
 
+/*----------------------- @MEDIA QUERY SECTION  ---------------*/
+/* background: rgb(0, 0, 0); 
+background: rgba(0, 0, 0, 0.5);
+color: #f1f1f1; */
+@media only screen and (max-width: 1039px) {
+    .feature_section_content {
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+
+    .feature_details {
+        bottom: 100px;
+    }
+
+    .feature_section_container {
+        padding: 6% 10% 5% 10%;
+    }
+    
+    .feature img {
+        width: 50%;
+    }
+
+    .feature_details h3 {
+        font-size: 2.8rem;
+    }
+}
+
 @media (max-width: 950px) {
     .feature_title {
         font-size: 1.5rem;
     }
 }
-/* background: rgb(0, 0, 0); 
-background: rgba(0, 0, 0, 0.5);
-color: #f1f1f1; */
+
+@media (max-width: 800px) {
+    .feature_section_container {
+        padding: 6% 4% 5% 4%;
+    }
+}
+/* ------------------------ FEATURED BAG SECTION ----------------------  */
+
+
+/* ---------------- START VAulT SECTION -------------*/
+.vault_content {
+    font-family: 'Sulphur Point', sans-serif;
+}
+
+.vault_header {
+    text-align: center;
+    font-size: 1.2rem;
+    font-variant: small-caps;
+    padding: 4rem 0 3rem 0;
+}
+
+.vault_columns {
+    display: flex;
+    gap: 2rem;
+}
+
+.vault_columns {
+    text-align: center;
+}
+
+.column img {
+    width: 100%;
+}
+
+.column h4 {
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+
+.column span a {
+    color: black;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 3;
+    text-decoration: underline;
+}
+
+ /* ------------------------------------ @ MEDIA QUERY FOR VAULT SECTION --------------------  */
+ @media (max-width: 800px) {
+    .vault_columns {
+        flex-direction: column;
+    }
+ }
+
+@media screen and (max-width: 500px) {
+    .column img {
+      width: 100%;
+    }
+} 
+/* ------------------------------ END VAULT SECTION -----------------------*/
 
 
 /* --------------------- START ABOUT US SECTION ---------------------*/
