@@ -17,13 +17,13 @@
     list-style: none;
 }
 
-button {
+/* button {
     border: none;
     background-color: #fff;
     font-size: 1.5rem;
     padding: 0 4px;
     cursor: pointer;
-}
+} */
 
 /*----------------- START TOP FOOTER -------------*/
 .top-footer{
@@ -75,13 +75,20 @@ button {
 }
 
 .hf {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 3rem 0 2rem;
     font-size: 2rem;
     padding-bottom: 0.5rem;
+    text-align: center;
+    position: relative;
 }
+
+#menu-bar {
+    float: right;
+    position: absolute;
+    padding: 1.5% 5% 0 0;
+    top: 0;
+    right: 0;
+}
+
 
 .hf h4 {
     font-size: 0.9rem;
@@ -93,13 +100,14 @@ button {
 /* Style the search bar container */
 .form {
     border: none;
+    display: none;
 }
 
 /* Style the search input */
 .input[type="text"] {
     width: 200px;
     padding: 10px;
-    height: 33px;
+    height: 35px;
     border: 1px solid black;
     border-bottom-right-radius: 10px;
     border-top-left-radius: 10px;
@@ -107,12 +115,33 @@ button {
   
   /* Style the search button */
 .form button[type="submit"] {
-    margin: -50px;
+    margin: 1px 0 1px -35px;
     width: 32px;
+    background-color: white;
     font-size: 1.4rem;
+    border: none;
     border-bottom-right-radius: 10px;
-    background: var black;
     color: black;
+    cursor: pointer;
+}
+
+.searchBtn {
+    border: none;
+    background-color: #fff;
+    font-size: 1.5rem;
+    padding: 0 4px;
+    cursor: pointer;
+}
+
+.icons {
+    display: none;
+}
+
+.icons button {
+    font-size: 75%;
+    border: none;
+    background-color: white;
+    padding-right: 10%;
     cursor: pointer;
 }
 
@@ -156,8 +185,9 @@ button {
     display: table;
 }
 
-.nav-menu #bar{
-    font-size: 24px;
+#menu-bar {
+    font-size: 2rem;
+    font-weight: 500;
     color: black;
     cursor: pointer;
     z-index: 1000001;
@@ -165,17 +195,36 @@ button {
 }
 
 /* ----------hamburger -----------  */
+@media only screen and (min-width: 1039px) {
+    .hf {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 3rem 0 2rem;
+        font-size: 2rem;
+        padding-bottom: 0.5rem;
+    }
 
+    .form, .icons {
+        display: flex;
+    }
+
+    .icons {
+        display: flex;
+        gap: 35%;
+    }
+
+}
 
 @media only screen and (max-width: 1039px) {
-    #bar {
+    #menu-bar {
         display: initial;
         color: black;
     }
 
     .nav-bar {
         position: absolute;
-        top: 100%;
+        top: -570px;
         left: 0;
         right: 0;
         display: flex;
@@ -189,19 +238,19 @@ button {
     }
 
     .nav-bar li a::before{
-        content: " ";
-        display: block;
-        height: 2.5px;
-        background-color: black;
-        position: absolute;
         left: 0;
-        bottom: -10px;
-        width: 0%;
-        transition: all ease-in-out 250ms;
     }
 
-    .nav-bar li a::after {
+    .nav-bar a {
+        width: 100%;
+    }
+
+    .nav-bar a::after {
         display: none;
+    }
+
+    .nav-bar.active {
+        top: 100%;
     }
 }
 

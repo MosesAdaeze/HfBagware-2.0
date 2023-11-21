@@ -14,21 +14,23 @@
 //         mobile_menu.classList.toggle('active');
 //     });
 // });
+
+
 // Nav bar menu .
 
-// let header = document.querySelector('.header');
-// let bar = document.querySelector('#bar');
-// let navbar = document.querySelector('.nav-bar');
+let header = document.querySelector('.header');
+let bar = document.querySelector('#menu-bar');
+let navbar = document.querySelector('.nav-bar');
 
-// bar.onclick = () => {
-//   bar.classList.toggle('uil-x');
-//   navbar.classList.toggle('active');
-// }
+bar.onclick = () => {
+  bar.classList.toggle('uil-x');
+  navbar.classList.toggle('active');
+}
 
-// window.onscroll = () => {
-//   bar.classList.remove('uil-x');
-//   navbar.classList.remove('active');
-// }
+window.onscroll = () => {
+  bar.classList.remove('uil-x');
+  navbar.classList.remove('active');
+}
 
 
 

@@ -120,7 +120,7 @@ font-family: 'Roboto', sans-serif;
     margin-top: 0.7rem;
     padding: 3% 5.2% 3% 5.2%;
     border: 2px solid black;
-    margin-bottom: 30%;
+    margin-bottom: 55%;
 }
   
 .button3:hover {
@@ -132,6 +132,9 @@ font-family: 'Roboto', sans-serif;
 @media (max-width: 1290px) {
     #product1 .pro-container {
         grid-template-columns: repeat(3, 1fr);
+        .button3 {
+            margin-bottom: 65%;
+        }
     }
 }
 
